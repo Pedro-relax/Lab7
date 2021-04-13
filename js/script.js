@@ -3,19 +3,10 @@ function init(){
 	
 	function myEventFunction() {
 		var entry =document.getElementById('entryinput');
-		var output =document.getElementById('textout');
-		alert("Pedro: " + entry.value);
+		var output =document.getElementById('textoutput');
+		alert("Pedro says: " + entry.value);
 		output.innerHTML = entry.value;
-
-
-
-
-
-
-
-
-
 	}
-	warning.addEventListener('click'
+	warning.addEventListener('click',myEventFunction);
 	}
 window.addEventListener('load',init);
